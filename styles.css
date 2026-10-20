@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  color: #172334;
+  background: #f5f7fb;
+}
+.container { max-width: 1040px; margin: auto; padding: 32px 20px 24px; }
+.hero {
+  background: #202f57;
+  color: white;
+  padding: 38px 32px;
+  border-radius: 18px;
+}
+.hero h1 { margin: 8px 0; font-size: clamp(2rem, 5vw, 3rem); }
+.hero p { margin: 0; line-height: 1.5; }
+.eyebrow { letter-spacing: 0.16em; font-size: .72rem; font-weight: 800; opacity: .85; }
+.tools { display: flex; gap: 16px; margin: 24px 0; }
+.field { flex: 1; }
+.field label { display: block; font-weight: 650; margin-bottom: 8px; }
+.field input, .field select {
+  width: 100%;
+  border: 1px solid #c4cada;
+  padding: 13px;
+  border-radius: 10px;
+  background: white;
+  font: inherit;
+}
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.section-heading h2 { font-size: 1.3rem; }
+#event-count { color: #53617a; }
+.event-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.event-card {
+  background: white;
+  border: 1px solid #e2e7f0;
+  padding: 22px;
+  border-radius: 14px;
+  min-height: 220px;
+}
+.event-card h3 { margin: 14px 0 6px; line-height: 1.3; }
+.event-card p { line-height: 1.5; }
+.category-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: .75rem;
+  font-weight: 700;
+  color: #254c86;
+  background: #e7f1ff;
+}
+.event-details { font-size: .88rem; color: #57647a; }
+.empty-state { grid-column: 1 / -1; padding: 30px; background: white; border-radius: 14px; }
+footer { margin-top: 26px; color: #68758a; font-size: .8rem; }
+/* MEMBER D: Improve the interface by changing colours and adding styles. */
+/* TODO 1: Add a :hover style to .event-card (e.g. border, shadow, transform). */
+/* TODO 2: Improve the .category-badge style. */
+/* TODO 3: Add a mobile layout at max-width: 650px (1 column, stacked tools). */

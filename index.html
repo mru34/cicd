@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Events Board</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="data/events.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/filter.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">TEAM GITHUB PRACTICAL</p>
+      <h1>Campus Events Board</h1>
+      <p>Discover sample events happening around campus.</p>
+    </header>
+
+    <section class="tools" aria-label="Find events">
+      <div class="field">
+        <label for="search-input">Search events</label>
+        <input id="search-input" type="search" placeholder="Try 'workshop' or 'library'" />
+      </div>
+      <div class="field">
+        <label for="category-select">Category</label>
+        <select id="category-select">
+          <option value="All">All categories</option>
+          <option value="Tech">Tech</option>
+          <option value="Career">Career</option>
+          <option value="Community">Community</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="section-heading">
+      <h2>Upcoming sample events</h2>
+      <span id="event-count" aria-live="polite"></span>
+    </div>
+    <section id="event-list" class="event-grid" aria-live="polite"></section>
+    <footer>Demo content for classroom practice. These are not real event announcements.</footer>
+  </main>
+</body>
+</html>
