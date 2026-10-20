@@ -25,5 +25,29 @@ window.EVENTS = [
     date: "20 Nov 2026",
     location: "Campus Plaza",
     description: "Explore student interest groups and sign up to get involved."
+  },
+  {
+    id: 4,
+    title: "Capture The Flag Night",
+    category: "Tech",
+    date: "27 Nov 2026",
+    location: "Cyber Security Lab",
+    description: "Team up to solve beginner-friendly security puzzles and web challenges."
+  },
+  {
+    id: 5,
+    title: "Resume and LinkedIn Clinic",
+    category: "Career",
+    date: "3 Dec 2026",
+    location: "Career Centre",
+    description: "Get one-on-one feedback on your resume and LinkedIn profile before internship season."
+  },
+  {
+    id: 6,
+    title: "Beach Clean-Up Day",
+    category: "Community",
+    date: "10 Dec 2026",
+    location: "East Coast Park",
+    description: "Volunteer with fellow students to clean up the beach and give back to the community."
   }
 ];
