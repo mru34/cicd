@@ -52,6 +52,32 @@ body {
 .empty-state { grid-column: 1 / -1; padding: 30px; background: white; border-radius: 14px; }
 footer { margin-top: 26px; color: #68758a; font-size: .8rem; }
 /* MEMBER D: Improve the interface by changing colours and adding styles. */
-/* TODO 1: Add a :hover style to .event-card (e.g. border, shadow, transform). */
-/* TODO 2: Improve the .category-badge style. */
-/* TODO 3: Add a mobile layout at max-width: 650px (1 column, stacked tools). */
+
+/* Card hover effect */
+.event-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.event-card:hover {
+  transform: translateY(-4px);
+  border-color: #6f8fd8;
+  box-shadow: 0 12px 24px rgba(32, 47, 87, 0.14);
+}
+
+/* Stronger category badge */
+.category-badge {
+  color: white;
+  background: #2f5fb3;
+  border: 1px solid #254c86;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: 0 2px 6px rgba(37, 76, 134, 0.25);
+}
+.event-card:hover .category-badge { background: #202f57; }
+
+/* Mobile layout */
+@media (max-width: 650px) {
+  .event-grid { grid-template-columns: 1fr; }
+  .tools { flex-direction: column; }
+  .hero { padding: 28px 22px; }
+  .event-card { min-height: auto; }
+}
