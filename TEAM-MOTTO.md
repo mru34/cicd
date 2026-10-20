@@ -1,1 +1,1 @@
-Team motto: Build together, ship together.
+Team motto: Code with care, merge with confidence.
